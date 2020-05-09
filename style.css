@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  background-color: aliceblue;
 }
 
 .container {
@@ -21,6 +22,10 @@ body {
 .sub-price,
 .plan-info {
   padding: 1.6rem;
+}
+
+.main-info {
+  background-color: #fff;
 }
 
 .main-info h1 {
@@ -99,4 +104,43 @@ footer {
 .attribution a {
   text-decoration: none;
   color: steelblue;
+}
+
+/* Media querie */
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 150%;
+  }
+
+  .container {
+    width: 40rem;
+    margin: 10rem auto;
+  }
+
+  .extra-info {
+    display: flex;
+  }
+
+  .sub-price,
+  .plan-info {
+    flex: 1;
+  }
+
+  .main-info,
+  .sub-price,
+  .plan-info {
+    padding: 2rem;
+  }
+
+  .main-info h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .signup-btn:hover {
+    cursor: pointer;
+    color: hsl(71, 73%, 54%);
+    background-color: #fff;
+    border-color: #fff;
+  }
 }
